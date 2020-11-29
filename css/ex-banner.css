@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave|Noto+Sans+KR');
+body {
+	font-family: 'Sedgwick Ave', cursive;
+}
+body,div,p,ul,li,a,nav,img,section,header {
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	width:1260px;
+	margin:0 auto;
+}
+header {
+	width:300px;
+	height:100%;
+	float: left;
+}
+
+a {text-decoration: none;color:inherit;}
+ul,li {list-style: none;}
+
+.clear {clear:both;}
+
+.hide {
+	display:none;
+	
+}
+.hide li {
+	background:#fff;
+	color:#000;
+}
+.submenu {
+	display:none;
+}
+
+
+
+header #logo {
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 76.16px;
+}
+header>nav {
+	font-size:1.5em;
+	font-weight:bold;
+}
+header>nav ul{
+	width:100%;
+	text-align: center;
+}
+
+header nav ul li {
+	padding:5px 0;
+	background:#56CDAE;
+	color:#fff;
+}
+
+/*header nav ul li:hover {
+	background:#56CDAE;
+	color:#fff;
+}*/
+header>nav>ul>li>a {
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-indent: 10px;
+}
+
+#right {
+	float:left;
+	width:960px;
+}
+
+
+#right #slide {
+	height:500px;
+	overflow:hidden;
+	position: relative;
+	background:#C79091;
+	display: none;
+}
+
+#right #slide ul { height: inherit; width:inherit;}
+#right #slide ul li {
+	float:left;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#right #slide ul li img { max-width:100%; width:960px; }
+
+#right #slide ul li img:not(:first-child){
+	display:none;
+}
+
+
+
+footer {
+	float: left;
+	background:#3B3B3B;
+	color:#ddd;
+	width:100%;
+	height:50px;
+	padding:10px;
+	font-size:1.1em;
+	box-sizing: border-box;
+	margin-top:20px;
+}
+footer p {
+	width:800px;
+	float: left;
+}
+
+#contents>article {
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+    text-align: center;
+
+}
+
+
+.notice>.tabmenu {
+    width: 90%;
+
+}
+
+.notice {
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 14px;	
+	    width: 100%;
+}
+
+
+
+.tabmenu a {
+	padding: 5px 20px;
+    border: 1px solid #eee;
+    float: left;
+    border-bottom:0;
+}
+
+.on {
+    background: #004f8a;
+    color: #fff;
+}
+#notice {
+	width: 100%;
+    clear: both;
+}
+
+
+
+#notice>table {
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 0 5px 5px 5px;
+    border: 1px solid #eee;
+}
+table td:first-child {
+    text-align: left;
+}
+
+tr td {
+    padding: 5px 10px 5px 5px;
+    font-size: 14px;
+}
+
+#gallery {
+	display: none;
+	clear: both;
+    border-radius: 0 5px 5px 5px;
+    border: 1px solid #eee;
+}
+
+#gallery img {
+	margin-left:15px;
+}
+
+#imgsbar {
+	position:absolute;
+	bottom:20px;
+	left:450px;
+}
+#imgsbar li {
+	float:left;
+	margin-left:10px;
+}
+
+#slide2 {
+	position:relative;
+	overflow:hidden;
+	height: 500px;
+	clear:both;
+}
+
+#slide2 #imgs {
+	width:2880px;
+	position: relative;
+}
+
+#slide2 #imgs li {
+	float:left;
+}
+#imgsbar a.active {
+   background-position:0 -30px;
+}
+
+
+#menu {
+	height: 76.16px;
+	box-sizing: content-box;
+	position:relative;
+	z-index: 99999;
+}
+
+#menu>nav {
+	margin-top:15px;
+	float:right;
+	font-size:1.3em;
+}
+
+#menu .subMenus {
+	float:left;
+	width:180px;
+	text-align:center;
+}
+
+#menu li {
+	height:45px;
+	line-height: 45px;
+}
+
+#menu .subMenus:hover {
+	background:#56CDAE;
+	color:#fff;
+}
+.submenus {
+	display: none;
+	background:rgba(255,255,255,0.80);
+	color:#000;
+}
+
+.submenus>li:hover {
+	background:rgba(221,138,140,0.90);
+	color:#fff;
+}
+
+#banner {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.banner_tabmenu{
+	width: 100%;
+}
+.banner_tabmenu a {
+	padding: 5px 20px;
+    border: 1px solid #eee;
+    float: left;
+    border-bottom:0;
+}
+.set {
+    background:rgba(54,35,22,1.00);
+    color: #fff;
+}
+
+#slide3 {
+	height:500px;
+	width:960px;
+	overflow:hidden;
+	display:none;
+	background:rgba(124,163,134,1.00);
+	position: relative;
+}
+
+#slide3>img {
+	position: absolute;
+	heigth:500px;
+	top:0;
+	left:0;
+}
+
+#slide4 {
+	position: relative;
+	width:960px;
+	height: 500px;
+	overflow:hidden;
+	background:rgba(124,163,134,1.00);
+	display: none;
+}
+#slide4 img {
+	position: absolute;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+#slide5 {
+	display: none;
+	height: 500px;
+	overflow: hidden;	position: absolute;
+	top:0;
+	left:0;
+}
+
+#slide5 #btn_slide {
+	z-index: 10000;
+	position: absolute;
+	bottom:20px;
+	left:400px;
+}
+
+#slide5 #btn_slide a {
+	width:60px;
+	font-weight: bold;
+	border-radius:10px;
+	text-align: center;
+	height:30px;
+	line-height: 30px;
+	color:#fff;
+	display: inline-block;
+	margin-left:20px; 
+	background:rgba(88,192,63,1.00);
+}
+
+#btn_slides a.off{
+	background:rgba(213,75,78,1.00);
+}
+
+#slide5 {
+	display: none;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+#btn_slides a {
+	width:60px;
+	font-weight: bold;
+	border-radius:10px;
+	text-align: center;
+	height:30px;
+	line-height: 30px;
+	color:#fff;
+	display: inline-block;
+	margin-left:20px; 
+	background:rgba(88,192,63,1.00);
+}
+
+#btn_slides {
+	z-index: 10000;
+	position: absolute;
+	bottom:20px;
+	left:400px;
+}
+
+#slides li {
+	display: none;
+}
+#slides li:first-child {
+	display: block;
+}
+
+#contents {
+	padding-top:20px;
+}
+
+#modal {
+	position: fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.9);
+	width:100%;
+	height: 100%;
+	display:none;
+	z-index: 99999;
+}
+
+#btn_close {
+	width:80px;
+	height:40px;
+	line-height: 40px;
+	background: rgba(215,135,233,1.00);
+	border:none;
+	border-radius: 10px;
+	font-family: 'Sedgwick Ave', cursive;
+	font-size:1.3em;
+	font-weight:bold;
+	color:#fff;
+	margin-top:10px;
+}
+
+#modal #body {
+	position:fixed;
+	top:200px;
+	left:500px;
+	width:500px;
+	height:400px;
+	background: #fff;
+	z-index: 999999;
+	text-align: center;
+}
+
+#contents_box {
+	margin-top:30px;
+}
+
+#notice>table tr:nth-child(even) {
+	background:rgba(240,170,109,1.00);
+}
+
+#slide6 {
+	display: none;
+	width:960px;
+	height:500px;
+	overflow: hidden;
+	position: relative;
+}
+
+#family_site {
+	float: right;
+	margin-right:10px;
+}
+
+#slides6 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
